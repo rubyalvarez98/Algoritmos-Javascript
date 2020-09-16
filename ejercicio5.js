@@ -1,8 +1,10 @@
 //Leer tres calificaciones de un alumno y determinar su promedio
 
 function notas(nota1,nota2,nota3){
-    const promedio = (Math.round(nota1 + nota2 + nota3)/3);
-    return console.log (`El promedio final es ${promedio}`);
+    
+    return `El promedio final es ${((nota1 + nota2 + nota3)/3).toFixed(1)}`;
 }
-notas(3.5,4.0,3.9)
+
+let promedio = notas(3.5,4.0,3.9);
+console.log(promedio);
 
