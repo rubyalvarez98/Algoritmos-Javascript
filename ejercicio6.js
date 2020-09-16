@@ -4,14 +4,13 @@ supere los $1,000 ¿cuál será la cantidad que pagará una persona por su compr
 function compra(valorCompra) {
 
     if (valorCompra > 1000) {
-       const descuento = valorCompra * 0.2;
-       const precioFinal = valorCompra - descuento;
-       return console.log(`El valor de la compra despues del descuento es: ${precioFinal}`);
+       let descuento = valorCompra * 0.2;
+      return `El valor de la compra con descuesto es: ${valorCompra - descuento}`;
     }else {
-        descuento = 0;
-        precioFinal = valorCompra - descuento;
-    return console.log(`El valor de la compra despues del descuento es: ${precioFinal}`);
+        
+        return `El valor de la compra es: ${valorCompra}`;
     }
     
 }
-compra(1200)
+ let precioFinal = compra(1200);
+ console.log(precioFinal);
